@@ -108,7 +108,7 @@ class AuthController {
 
         } catch(error){
             return {
-                status: '0',
+                status: "0",
                 msg: 'username or password invalid'
             }
         }
