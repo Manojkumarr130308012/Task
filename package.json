@@ -1,0 +1,35 @@
+{
+  "name": "example",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon --exec node index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.19.0",
+    "compression": "1.7.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^8.6.0",
+    "ejs": "^3.1.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "9.0.2",
+    "mongoose": "^5.9.25",
+    "node-cron": "^3.0.2",
+    "nodemon": "3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "16.20.1"
+  }
+}
