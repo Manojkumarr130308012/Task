@@ -5,7 +5,6 @@ const userController = require('./../controller/user');
 router.get('/', async (req, res) => {
     res.send(await userController.fetch());
 });
-
 router.get('/fetchlusers', async (req, res) => {
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	const response = await userController.fetchdata(req.query.id);
