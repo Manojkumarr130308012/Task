@@ -22,6 +22,7 @@ const authRouter = require('./../router/authController');
  
  let db= process.env.MONGODB_URL ||`mongodb+srv://admin:1234@hoffen.ydqkw.mongodb.net/?retryWrites=true&w=majority&appName=hoffen`;
 
+ 
 console.log('connected to the database',db);
 
 mongoose.connect(db, {
