@@ -107,6 +107,7 @@ class AuthController {
             };
 
         } catch(error){
+            console.log(error);
             return {
                 status: "0",
                 msg: 'username or password invalid'
