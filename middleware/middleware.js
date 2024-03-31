@@ -41,8 +41,8 @@ mongoose.connect(db, {
 
   
 
-// server.use("/user",verifyToken, userRouter);
-server.use("/user", userRouter);
+server.use("/user",verifyToken, userRouter);
+// server.use("/user", userRouter);
 server.use("/auth", authRouter);
 
 module.exports= server;
