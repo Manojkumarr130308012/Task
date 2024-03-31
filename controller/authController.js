@@ -93,7 +93,7 @@ class AuthController {
             }
 
 
-            const userToken = jwt.sign({id:user._id,email:user.email},process.env.JWT_SECRET,{expiresIn:"1h"});
+            const userToken = jwt.sign({id:user._id,email:user.email},process.env.JWT_SECRET,{expiresIn:"24h"});
 
 
             const {password,otp,createdAt,updatedAt,__v,...others} =  user._doc;
