@@ -25,7 +25,12 @@ class UserController {
 	async fetchdata(id){
 		try{
 			let response = await userSchema.find({_id:id});
-			return response;	
+			if(response != null){
+			 return response[0];	
+			}else{
+				return { status: "error", error: "No Data" }; 	
+			}
+			
 		} catch(error){
 			return {
 				status: "error",
