@@ -38,6 +38,11 @@ class AuthController {
                 username:body.username,
                 email : body.email,
                 password : CryptoJS.AES.encrypt(body.password,process.env.SECRET).toString(),
+                designation : body.designation,
+                phone:body.phone,
+                Gender:body.Gender,
+                City:body.City,
+                State:body.State
             })
             await newUser.save();
         return {
